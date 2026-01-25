@@ -1,0 +1,35 @@
+baseURL = "https://cortes-lopez-lab.github.io/"
+languageCode = "en-us"
+title = "Cortés López Lab"
+theme = "cortes-lab"
+
+[params]
+  tagline = "Single-Cell and Long-Read RNA Regulation Lab & AI for Kids"
+  lab_link = "https://mcortes-lopez.github.io/"
+  lab_link_label = "Personal site"
+
+[menu]
+  [[menu.main]]
+    name = "Research"
+    url = "/research/"
+    weight = 10
+  [[menu.main]]
+    name = "People"
+    url = "/people/"
+    weight = 20
+  [[menu.main]]
+    name = "Publications"
+    url = "/publications/"
+    weight = 30
+  [[menu.main]]
+    name = "News"
+    url = "/news/"
+    weight = 40
+  [[menu.main]]
+    name = "Join"
+    url = "/join/"
+    weight = 50
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 60

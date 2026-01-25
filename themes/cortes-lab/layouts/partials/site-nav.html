@@ -1,0 +1,11 @@
+<div class="nav-wrap">
+  <div class="brand">
+    <a href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+    <span>{{ .Site.Params.tagline }}</span>
+  </div>
+  <nav>
+    {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}">{{ .Name }}</a>
+    {{ end }}
+  </nav>
+</div>

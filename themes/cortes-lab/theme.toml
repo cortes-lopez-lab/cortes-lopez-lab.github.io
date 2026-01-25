@@ -1,0 +1,12 @@
+name = "Cortes Lab"
+license = "MIT"
+licenselink = ""
+description = "Bold academic lab theme with Helmholtz Munich / LMU inspired palette."
+homepage = ""
+tags = ["lab", "research", "minimal", "bold"]
+features = ["sections", "responsive", "custom palette"]
+min_version = "0.111.0"
+
+[author]
+  name = "Codex"
+  homepage = ""

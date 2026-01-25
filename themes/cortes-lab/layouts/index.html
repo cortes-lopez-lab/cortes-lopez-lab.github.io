@@ -1,0 +1,41 @@
+{{ define "main" }}
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Helmholtz Munich · LMU</p>
+      <h1>{{ .Site.Title }}</h1>
+      <p class="tagline">{{ .Site.Params.tagline }}</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="{{ .Site.Params.lab_link }}">{{ .Site.Params.lab_link_label }}</a>
+        <a class="btn ghost" href="/join/">Join the lab</a>
+      </div>
+    </div>
+    <div class="hero-panel">
+      <div class="panel-card">
+        <h2>Research pillars</h2>
+        <ul>
+          <li>Single-cell & spatial transcriptomics</li>
+          <li>Long-read isoform discovery</li>
+          <li>RNA regulation & disease</li>
+          <li>AI for kids learning</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-grid">
+    {{ range .Site.Menus.main }}
+      <a class="section-card reveal" href="{{ .URL }}">
+        <h3>{{ .Name }}</h3>
+        <p>Explore {{ .Name | lower }} in the lab.</p>
+      </a>
+    {{ end }}
+  </section>
+
+  <section class="callout reveal">
+    <div>
+      <h2>Collaborations welcome</h2>
+      <p>We partner across genomics, computational biology, and education. Reach out to discuss projects or shared training initiatives.</p>
+    </div>
+    <a class="btn primary" href="/contact/">Contact</a>
+  </section>
+{{ end }}

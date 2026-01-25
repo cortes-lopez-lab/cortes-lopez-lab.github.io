@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.tagline }}{{ end }}" />
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
+  </head>
+  <body>
+    <header class="site-header">
+      {{ partial "site-nav.html" . }}
+    </header>
+
+    <main class="site-main">
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer class="site-footer">
+      {{ partial "site-footer.html" . }}
+    </footer>
+  </body>
+</html>
