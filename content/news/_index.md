@@ -4,4 +4,4 @@ title: "News"
 
 Updates from the lab.
 
-- _Add lab announcements and highlights._
+January 2026 - The lab opens!

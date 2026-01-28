@@ -9,9 +9,9 @@ theme = "cortes-lab"
       unsafe = true
 
 [params]
-  tagline = "Single-Cell and Long-Read RNA Regulation Lab & AI for Kids"
-  lab_link = "https://mcortes-lopez.github.io/"
-  lab_link_label = "Personal site"
+  tagline = "Single-Cell and Long-Read RNA Regulation Lab | AI for Kids"
+  lab_link = "https://www.helmholtz-munich.de/en/icb/mariela-cortes-lopez"
+  lab_link_label = "Institutional site"
 
 [menu]
   [[menu.main]]
