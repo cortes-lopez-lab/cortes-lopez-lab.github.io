@@ -2,7 +2,7 @@
 title: "People"
 ---
 
-We are a multidisciplinary team of biologists, engineers, and clinicians who build bridges between AI methods and pediatric (and young adult) disease biology.
+We look to build bridges between AI methods and pediatric disease biology.
 
 ## Principal Investigator
 <section class="people-grid">
@@ -59,6 +59,4 @@ We are a multidisciplinary team of biologists, engineers, and clinicians who bui
 - 2014: Fellowship, Ayudante Investigador (CONACYT - Mexico)
 
 ## Lab members
-- _You could be here — we are always excited to meet curious scientists and collaborators._
-
-_Have a photo to add? Send it over and I can format the People section with headshots and short bios._
+- _You could be here!_

@@ -3,6 +3,11 @@ languageCode = "en-us"
 title = "Cortés López Lab"
 theme = "cortes-lab"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
   tagline = "Single-Cell and Long-Read RNA Regulation Lab & AI for Kids"
   lab_link = "https://mcortes-lopez.github.io/"

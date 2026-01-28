@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Space+Grotesk:wght@400;600;700&display=swap");
-
 :root {
   --hm-pink: #ff506e;
   --hm-purple: #69005f;
@@ -7,6 +5,8 @@
   --ink: #0a0f1c;
   --paper: #f4f2ee;
   --mist: #e7eef7;
+  --font-rounded: "Arial Rounded MT Regular", "Arial Rounded MT", "Avenir Next Rounded",
+    "Helvetica Rounded", "Trebuchet MS", "Helvetica Neue", Arial, sans-serif;
 }
 
 * {
@@ -15,7 +15,7 @@
 
 body {
   margin: 0;
-  font-family: "Arial Rounded MT Regular", "Arial Rounded MT", "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-rounded);
   color: var(--ink);
   background:
     radial-gradient(circle at 20% 20%, rgba(255, 80, 110, 0.16), transparent 55%),
@@ -30,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Arial Rounded MT Regular", "Arial Rounded MT", "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-rounded);
   font-weight: 700;
 }
 
@@ -66,7 +66,7 @@ a {
 
 .brand span {
   display: block;
-  font-family: "Newsreader", Georgia, serif;
+  font-family: inherit;
   font-size: 0.9rem;
   color: #2c3e5c;
 }
@@ -120,7 +120,7 @@ nav a:hover {
 }
 
 .tagline {
-  font-family: "Newsreader", Georgia, serif;
+  font-family: inherit;
   font-size: 1.2rem;
   line-height: 1.6;
   margin: 0 0 24px;
@@ -229,7 +229,7 @@ nav a:hover {
 }
 
 .page-content {
-  font-family: "Newsreader", Georgia, serif;
+  font-family: inherit;
   font-size: 1.05rem;
   line-height: 1.7;
   max-width: 760px;
@@ -253,14 +253,14 @@ nav a:hover {
 .person-card h3 {
   margin: 14px 0 4px;
   color: var(--hm-purple);
-  font-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  font-family: inherit;
 }
 
 .person-title {
   margin: 0 0 10px;
   font-weight: 600;
   color: var(--lmu-green);
-  font-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  font-family: inherit;
 }
 
 .person-photo {
@@ -278,7 +278,7 @@ nav a:hover {
   display: grid;
   place-items: center;
   font-weight: 600;
-  font-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  font-family: inherit;
   color: #2c3e5c;
   background: radial-gradient(circle at 30% 30%, rgba(255, 80, 110, 0.25), transparent 60%),
     radial-gradient(circle at 70% 70%, rgba(0, 126, 54, 0.2), transparent 60%),
