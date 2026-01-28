@@ -15,48 +15,4 @@ Dr. von Hauner Children’s Hospital
 Pediatric Clinic of the LMU University Hospital Munich  
 Campus Innenstadt | Lindwurmstr. 4 | 80337 Munich | Germany  
 
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-  crossorigin=""
-/>
-<script
-  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-  crossorigin=""
-></script>
-
-<div id="lab-map" style="height: 380px; border-radius: 12px;"></div>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    if (!window.L) return;
-    var locations = [
-      {
-        name: "Helmholtz Munich (Building 58a)",
-        coords: [48.22135, 11.5931],
-        address: "Ingolstädter Landstraße 1, 85764 Neuherberg",
-      },
-      {
-        name: "Dr. von Hauner Children’s Hospital",
-        coords: [48.13028, 11.55921],
-        address: "Lindwurmstr. 4, 80337 Munich",
-      },
-    ];
-
-    var map = L.map("lab-map", { scrollWheelZoom: false });
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      maxZoom: 19,
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-    }).addTo(map);
-
-    var bounds = [];
-    locations.forEach(function (loc) {
-      var marker = L.marker(loc.coords).addTo(map);
-      marker.bindPopup("<strong>" + loc.name + "</strong><br/>" + loc.address);
-      bounds.push(loc.coords);
-    });
-
-    map.fitBounds(bounds, { padding: [30, 30] });
-  });
-</script>
+{{< contact-map >}}
