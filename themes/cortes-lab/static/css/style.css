@@ -15,13 +15,23 @@
 
 body {
   margin: 0;
-  font-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Arial Rounded MT Regular", "Arial Rounded MT", "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
   color: var(--ink);
   background:
     radial-gradient(circle at 20% 20%, rgba(255, 80, 110, 0.16), transparent 55%),
     radial-gradient(circle at 85% 5%, rgba(0, 126, 54, 0.18), transparent 45%),
     linear-gradient(120deg, var(--paper), #ffffff 60%);
   min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Arial Rounded MT Regular", "Arial Rounded MT", "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
 }
 
 a {
@@ -223,6 +233,74 @@ nav a:hover {
   font-size: 1.05rem;
   line-height: 1.7;
   max-width: 760px;
+}
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin: 24px 0 10px;
+}
+
+.person-card {
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 18px;
+  padding: 18px 18px 22px;
+  border: 1px solid rgba(10, 15, 28, 0.08);
+  box-shadow: 0 12px 24px rgba(10, 15, 28, 0.08);
+}
+
+.person-card h3 {
+  margin: 14px 0 4px;
+  color: var(--hm-purple);
+  font-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+}
+
+.person-title {
+  margin: 0 0 10px;
+  font-weight: 600;
+  color: var(--lmu-green);
+  font-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+}
+
+.person-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border: 3px solid rgba(105, 0, 95, 0.15);
+  box-shadow: 0 10px 24px rgba(10, 15, 28, 0.12);
+}
+
+.person-placeholder {
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  color: #2c3e5c;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 80, 110, 0.25), transparent 60%),
+    radial-gradient(circle at 70% 70%, rgba(0, 126, 54, 0.2), transparent 60%),
+    #fff;
+}
+
+.person-social {
+  margin: 12px 0 0;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.person-social a {
+  color: #2c3e5c;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.person-social a:hover {
+  color: var(--hm-purple);
+  transform: translateY(-1px);
 }
 
 .site-footer {
