@@ -4,8 +4,8 @@ title: "Contact"
 
 **Mariela Cortés López, Ph.D.**  
 Helmholtz Munich / LMU  
-Email: mariela.corteslopez@helmholtz-munich.de  
-
+Email: [mariela.corteslopez@helmholtz-munich.de](mailto:mariela.corteslopez@helmholtz-munich.de)  
+LMU Email: [Mariela.Cortes@med.uni-muenchen.de](mailto:Mariela.Cortes@med.uni-muenchen.de)
 
 **Locations**  
 Helmholtz Munich (Building 58a)  
