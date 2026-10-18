@@ -11,30 +11,44 @@ theme = "cortes-lab"
 [params]
   tagline = "Single-Cell and Long-Read RNA Regulation Lab | AI for Kids"
   lab_link = "https://www.helmholtz-munich.de/en/icb/mariela-cortes-lopez"
-  lab_link_label = "Institutional site"
+  lab_link_label = "Helmholtz Munich"
+  hauner_link = "https://www.ccrc-hauner.de/research-labs/cortes-lopez-lab/fa2ecdae3c8763a0"
+  hauner_link_label = "Dr. von Hauner Children's Hospital"
 
 [menu]
   [[menu.main]]
     name = "Research"
     url = "/research/"
     weight = 10
+    [menu.main.params]
+      description = "RNA regulation and splicing across single-cell and long-read data."
   [[menu.main]]
     name = "People"
     url = "/people/"
     weight = 20
+    [menu.main.params]
+      description = "Meet the team behind the lab."
   [[menu.main]]
     name = "Publications"
     url = "/publications/"
     weight = 30
+    [menu.main.params]
+      description = "Selected and complete list of papers."
   [[menu.main]]
     name = "News"
     url = "/news/"
     weight = 40
+    [menu.main.params]
+      description = "Updates and milestones from the lab."
   [[menu.main]]
     name = "Join"
     url = "/join/"
     weight = 50
+    [menu.main.params]
+      description = "Students, technicians and collaborators welcome."
   [[menu.main]]
     name = "Contact"
     url = "/contact/"
     weight = 60
+    [menu.main.params]
+      description = "Where to find us in Munich."

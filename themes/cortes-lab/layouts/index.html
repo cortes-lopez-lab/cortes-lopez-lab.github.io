@@ -1,31 +1,36 @@
 {{ define "main" }}
   <section class="hero">
     <div class="hero-content">
-      <p class="eyebrow">Helmholtz Munich · LMU</p>
+      <p class="eyebrow">Helmholtz Munich · LMU · Dr. von Hauner Children's Hospital</p>
       <h1>{{ .Site.Title }}</h1>
       <p class="tagline">{{ .Site.Params.tagline }}</p>
+      {{ with .Content }}<div class="hero-intro">{{ . }}</div>{{ end }}
       <div class="hero-actions">
         <a class="btn primary" href="{{ .Site.Params.lab_link }}">{{ .Site.Params.lab_link_label }}</a>
+        <a class="btn primary alt" href="{{ .Site.Params.hauner_link }}">{{ .Site.Params.hauner_link_label }}</a>
         <a class="btn ghost" href="/join/">Join the lab</a>
       </div>
     </div>
-    <div class="hero-panel">
-      <div class="panel-card">
-        <h2>Research pillars</h2>
-        <ul>
-          <li>Single-cell transcriptomics</li>
-          <li>Long-read isoform discovery</li>
-          <li>RNA regulation & disease</li>
-          <li>AI modeling</li>
-        </ul>
-      </div>
-    </div>
+    <figure class="hero-photo">
+      <img src="/images/lab/lab-2026.jpg" alt="Members of the Cortés López Lab standing together outdoors" />
+    </figure>
+  </section>
+
+  <section class="pillars reveal">
+    <h2 class="pillars-title">Research pillars</h2>
+    <ul class="pillar-list">
+      <li><i class="fa-solid fa-circle-nodes"></i>Single-cell transcriptomics</li>
+      <li><i class="fa-solid fa-dna"></i>Long-read isoform discovery</li>
+      <li><i class="fa-solid fa-scissors"></i>RNA regulation &amp; disease</li>
+      <li><i class="fa-solid fa-brain"></i>AI modeling</li>
+    </ul>
   </section>
 
   <section class="section-grid">
     {{ range .Site.Menus.main }}
       <a class="section-card reveal" href="{{ .URL }}">
-        <h3>{{ .Name }}</h3>
+        <h3>{{ .Name }} <span aria-hidden="true">→</span></h3>
+        {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
       </a>
     {{ end }}
   </section>
@@ -35,6 +40,6 @@
       <h2>Collaborations welcome</h2>
       <p>We partner across genomics, computational biology, and technology development. Reach out to discuss projects or shared training initiatives.</p>
     </div>
-    <a class="btn primary" href="/contact/">Contact</a>
+    <a class="btn light" href="/contact/">Contact</a>
   </section>
 {{ end }}
